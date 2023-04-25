@@ -305,6 +305,30 @@
 	background-color: var(--bs-primary);
 }
 
+/* Post Edit Link
+---------------------------------------- */
+.post-edit-link {
+	margin-top: 1rem;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 0.25rem;
+	padding: 4px 16px;
+	color: var(--bs-warning, "inherit") !important;
+	border: solid 1px currentColor;
+	transition: all 0.25s;
+}
+
+.post-edit-link::before {
+	content: "";
+	font-family: 'Font Awesome 6 Pro';
+	margin-right: 0.5rem;
+}
+
+.post-edit-link:hover {
+	color: white !important;
+	background-color: var(--bs-warning, "inherit") !important;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
