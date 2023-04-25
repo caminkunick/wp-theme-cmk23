@@ -1,0 +1,17 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+@mixin max-width-post {
+  width: 100%;
+  max-width: calc(640px + 48px);
+  margin-inline: auto;
+  padding-block: 48px;
+  padding-inline: 24px;
+  box-sizing: border-box;
+}
+
+@mixin clear-a {
+  &:hover, &:active, &:visited, &:focus {
+    color: inherit;
+  }
+}
