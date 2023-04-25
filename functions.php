@@ -263,3 +263,14 @@ function my_admin_theme_style() {
 }
 add_action('admin_enqueue_scripts', 'my_admin_theme_style');
 add_action('login_enqueue_scripts', 'my_admin_theme_style');
+
+/* Add Plugin Update Checker
+---------------------------------------- */
+
+require get_template_directory() . '/puc/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://johnjadd-3524a.firebaseio.com/wordpress/theme.json',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'cmk23'
+);
