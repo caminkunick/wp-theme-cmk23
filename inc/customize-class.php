@@ -54,6 +54,19 @@ class CustomizerSection {
       'type'    => 'number',
     ));
   }
+
+  public function add_control_image( $slug, $title, $default = "" ){
+    $this->wp_customize->add_setting( $slug, array(
+      'default' => $default
+    ));
+    $this->wp_customize->add_control(
+      new WP_Customize_Image_Control( $this->wp_customize, $slug . "_control", array(
+        'label'     => __( $title, 'cmk23' ),
+        'section'   => $this->slug,
+        'settings'  => $slug,
+      )
+    ));
+  }
 }
 
 class CustomizerPanel {

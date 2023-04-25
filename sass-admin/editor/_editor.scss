@@ -1,3 +1,14 @@
+.edit-post-visual-editor__content-area {
+  .editor-styles-wrapper {
+    max-width: $max-width__post;
+    margin-inline: auto;
+
+    .wp-block-post-title {
+      font-size: $font-size__h3;
+    }
+  }
+}
+
 .wp-block-post-content {
   @include single-typography-set;
 }

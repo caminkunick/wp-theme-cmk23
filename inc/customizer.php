@@ -37,10 +37,14 @@ function cmk23_customize_register( $wp_customize ) {
 	$custom = new Customizer( $wp_customize );
 
 	$setting_panel = $custom->add_panel( "cmk__setting", "[Theme] Setting" );
+	
 	$main_section = $setting_panel->add_section( "cmk__setting_main", "Main" );
 	$main_section->add_control_textarea("cmk__font_embed", "Font Embed");
 	$main_section->add_control_text("cmk__font_h_family", "[Header] Font Family");
 	$main_section->add_control_text("cmk__font_p_family", "[Paragraph] Font Family");
+
+	$image_section = $setting_panel->add_section( "cmk__setting_image", "Image" );
+	$image_section->add_control_image( "cmk__placeholder_image", "Place Holder Image" );
 }
 add_action( 'customize_register', 'cmk23_customize_register' );
 
