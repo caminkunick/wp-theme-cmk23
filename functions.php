@@ -230,7 +230,7 @@ function my_javascripts() {
 	wp_enqueue_script( 'theme-main-js', 
 	get_template_directory_uri() . '/js/main.js',
 		array(), 
-		'1.0.1', 
+		_S_VERSION, 
 		true
 	);
 }
