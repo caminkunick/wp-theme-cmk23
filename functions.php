@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1' );
 }
 
 /**
@@ -230,7 +230,7 @@ function my_javascripts() {
 	wp_enqueue_script( 'theme-main-js', 
 	get_template_directory_uri() . '/js/main.js',
 		array(), 
-		'1.0.0', 
+		'1.0.1', 
 		true
 	);
 }
@@ -270,7 +270,7 @@ add_action('login_enqueue_scripts', 'my_admin_theme_style');
 require get_template_directory() . '/puc/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://johnjadd-3524a.firebaseio.com/wordpress/theme.json',
+	'https://raw.githubusercontent.com/caminkunick/wp-theme-cmk23/main/package.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'cmk23'
 );
