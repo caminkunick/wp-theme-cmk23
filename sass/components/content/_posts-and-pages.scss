@@ -57,7 +57,7 @@
   .type-post {
     .entry-body {
       @include max-width-post;
-      @include header-set;
+      @include single-typography-set;
 
 			.entry-title {
 				margin: 0;
@@ -103,8 +103,27 @@
     }
     .entry-body {
       @include max-width-post;
-      @include header-set;
+      @include single-typography-set;
     }
+  }
+}
+//!SECTION
+
+//SECTION - .entry-meta
+.entry-meta {
+  display: flex;
+  margin-top: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: $font-size__caption;
+  color: $color__text-secondary;
+
+  a {
+    @include link-unset;
+  }
+
+  i.fa-regular {
+    margin-right: 0.25em;
   }
 }
 //!SECTION

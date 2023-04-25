@@ -15,6 +15,7 @@
 	<div class="entry-body">
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php cmk23_post_meta(); ?>
 		</header><!-- .entry-header -->
 
 

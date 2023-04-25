@@ -434,11 +434,18 @@
 
 .single-post .type-post .entry-body p {
 	margin: 0;
+	font-size: 1rem;
 }
 
 .single-post .type-post .entry-body p::after {
 	content: " ";
 	display: inline-block;
+}
+
+.single-post .type-post .entry-body ul {
+	font-size: 1rem;
+	margin: 0;
+	list-style: "-  ";
 }
 
 .single-post .type-post .entry-body .entry-title {
@@ -524,11 +531,35 @@
 
 .single-staff .type-staff .entry-body p {
 	margin: 0;
+	font-size: 1rem;
 }
 
 .single-staff .type-staff .entry-body p::after {
 	content: " ";
 	display: inline-block;
+}
+
+.single-staff .type-staff .entry-body ul {
+	font-size: 1rem;
+	margin: 0;
+	list-style: "-  ";
+}
+
+.entry-meta {
+	display: flex;
+	margin-top: 0.5rem;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.75rem;
+	color: #999999;
+}
+
+.entry-meta a:hover, .entry-meta a:active, .entry-meta a:visited, .entry-meta a:focus {
+	color: inherit;
+}
+
+.entry-meta i.fa-regular {
+	margin-right: 0.25em;
 }
 
 /* Comments
@@ -713,47 +744,54 @@ a.staff-list-item:hover {
 /*--------------------------------------------------------------
 # Editor
 --------------------------------------------------------------*/
-.edit-post-visual-editor h1,
-.edit-post-visual-editor h2,
-.edit-post-visual-editor h3,
-.edit-post-visual-editor h4,
-.edit-post-visual-editor h5,
-.edit-post-visual-editor h6 {
+.wp-block-post-content h1,
+.wp-block-post-content h2,
+.wp-block-post-content h3,
+.wp-block-post-content h4,
+.wp-block-post-content h5,
+.wp-block-post-content h6 {
 	font-family: var(--font-header-family);
 	margin: 0;
 }
 
-.edit-post-visual-editor h1 {
+.wp-block-post-content h1 {
 	font-size: 4.5rem;
 }
 
-.edit-post-visual-editor h2 {
+.wp-block-post-content h2 {
 	font-size: 3.75rem;
 }
 
-.edit-post-visual-editor h3 {
+.wp-block-post-content h3 {
 	font-size: 3rem;
 }
 
-.edit-post-visual-editor h4 {
+.wp-block-post-content h4 {
 	font-size: 2.25rem;
 }
 
-.edit-post-visual-editor h5 {
+.wp-block-post-content h5 {
 	font-size: 1.875rem;
 }
 
-.edit-post-visual-editor h6 {
+.wp-block-post-content h6 {
 	font-size: 1.5rem;
 }
 
-.edit-post-visual-editor p {
+.wp-block-post-content p {
 	margin: 0;
+	font-size: 1rem;
 }
 
-.edit-post-visual-editor p::after {
+.wp-block-post-content p::after {
 	content: " ";
 	display: inline-block;
+}
+
+.wp-block-post-content ul {
+	font-size: 1rem;
+	margin: 0;
+	list-style: "-  ";
 }
 
 /*# sourceMappingURL=adminstyle.css.map */

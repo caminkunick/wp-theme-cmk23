@@ -2,9 +2,9 @@
 /*!
 Theme Name: cmk23
 Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://caminku
-Description: Description
+Author: CamINKu
+Author URI: https://github.com/caminkunick
+Description: plugin require "Post View Counter"
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -11347,11 +11347,18 @@ textarea {
 
 .single-post .type-post .entry-body p {
 	margin: 0;
+	font-size: 1rem;
 }
 
 .single-post .type-post .entry-body p::after {
 	content: " ";
 	display: inline-block;
+}
+
+.single-post .type-post .entry-body ul {
+	font-size: 1rem;
+	margin: 0;
+	list-style: "-  ";
 }
 
 .single-post .type-post .entry-body .entry-title {
@@ -11452,11 +11459,35 @@ textarea {
 
 .single-staff .type-staff .entry-body p {
 	margin: 0;
+	font-size: 1rem;
 }
 
 .single-staff .type-staff .entry-body p::after {
 	content: " ";
 	display: inline-block;
+}
+
+.single-staff .type-staff .entry-body ul {
+	font-size: 1rem;
+	margin: 0;
+	list-style: "-  ";
+}
+
+.entry-meta {
+	display: flex;
+	margin-top: 0.5rem;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.75rem;
+	color: #999999;
+}
+
+.entry-meta a:hover, .entry-meta a:active, .entry-meta a:visited, .entry-meta a:focus {
+	color: inherit;
+}
+
+.entry-meta i.fa-regular {
+	margin-right: 0.25em;
 }
 
 /* Comments
