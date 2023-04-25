@@ -1,16 +1,1 @@
-(() => {
-  const buttonToggle = document.querySelectorAll(".menu-toggle");
-  buttonToggle.forEach((button) => {
-    button.addEventListener("click", () => {
-      const targetId = button.getAttribute("aria-controls");
-      const target = document.getElementById(targetId);
-      if (target) {
-        if (["", "none"].includes(target.style.display)) {
-          target.style.display = "block";
-        } else {
-          target.style.display = "none";
-        }
-      }
-    });
-  });
-})();
+document.querySelectorAll(".menu-toggle").forEach(t=>{t.addEventListener("click",()=>{let l=t.getAttribute("aria-controls");if(l){let e=document.getElementById(l);e&&(["","none"].includes(e.style.display)?e.style.display="block":e.style.display="none")}})});

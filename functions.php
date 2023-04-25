@@ -270,7 +270,7 @@ add_action('login_enqueue_scripts', 'my_admin_theme_style');
 require get_template_directory() . '/puc/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://raw.githubusercontent.com/caminkunick/wp-theme-cmk23/main/package.json',
+	'https://raw.githubusercontent.com/caminkunick/wp-theme-cmk23/main/theme.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'cmk23'
 );
