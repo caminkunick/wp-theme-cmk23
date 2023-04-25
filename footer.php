@@ -13,11 +13,10 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<strong>Copyright ©2023</strong>
-			Japanese Section,
-			Department of Eastern Languages,
-			Faculty of Arts,
-			Chulalongkorn University.
+			<?php dynamic_sidebar( 'footer-1' ); ?>
+			<?php dynamic_sidebar( 'footer-2' ); ?>
+			<?php dynamic_sidebar( 'footer-3' ); ?>
+			<?php dynamic_sidebar( 'footer-4' ); ?>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -1,6 +1,12 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
+$max-width__sm: 640px;
+$max-width__post: 720px;
+$max-width__md: 960px;
+$max-width__lg: 1280px;
+$max-width__xl: 1920px;
+
 @mixin max-width-post {
   width: 100%;
   max-width: calc(640px + 48px);

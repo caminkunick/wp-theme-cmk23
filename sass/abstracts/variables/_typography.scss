@@ -5,3 +5,38 @@ $font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+$font-size__h1: 4.5rem;
+$font-size__h2: 3.75rem;
+$font-size__h3: 3rem;
+$font-size__h4: 2.25rem;
+$font-size__h5: 1.875rem;
+$font-size__h6: 1.5rem;
+$font-size__body1: 1.125rem;
+$font-size__body2: 1rem;
+$font-size__caption: 0.75rem;
+
+@mixin header-set {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-header-family);
+    margin: 0;
+  }
+  h1 { font-size: $font-size__h1; }
+  h2 { font-size: $font-size__h2; }
+  h3 { font-size: $font-size__h3; }
+  h4 { font-size: $font-size__h4; }
+  h5 { font-size: $font-size__h5; }
+  h6 { font-size: $font-size__h6; }
+  p {
+    margin: 0;
+    &::after {
+      content: " ";
+      display: inline-block;
+    }
+  }
+}

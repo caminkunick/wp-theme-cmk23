@@ -120,17 +120,35 @@ add_action( 'after_setup_theme', 'cmk23_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function cmk23_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'cmk23' ),
-			'id'            => 'sidebar-1',
+	function gen_widget($id, $name){
+		return array(
+			'name'          => esc_html__( $name, 'cmk23' ),
+			'id'            => $id,
 			'description'   => esc_html__( 'Add widgets here.', 'cmk23' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
-		)
-	);
+		);
+	}
+
+	// register_sidebar(
+	// 	array(
+	// 		'name'          => esc_html__( 'Sidebar', 'cmk23' ),
+	// 		'id'            => 'sidebar-1',
+	// 		'description'   => esc_html__( 'Add widgets here.', 'cmk23' ),
+	// 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+	// 		'after_widget'  => '</section>',
+	// 		'before_title'  => '<h2 class="widget-title">',
+	// 		'after_title'   => '</h2>',
+	// 	)
+	// );
+
+	register_sidebar( gen_widget( "sidebar-1", "Sidebar" ) );
+	register_sidebar( gen_widget( "footer-1", "Footer 1" ) );
+	register_sidebar( gen_widget( "footer-2", "Footer 2" ) );
+	register_sidebar( gen_widget( "footer-3", "Footer 3" ) );
+	register_sidebar( gen_widget( "footer-4", "Footer 4" ) );
 }
 add_action( 'widgets_init', 'cmk23_widgets_init' );
 
@@ -237,3 +255,11 @@ function create_posttype() {
 	);
 }
 add_action( 'init', 'create_posttype' );
+
+/* Add Admin CSS
+---------------------------------------- */
+function my_admin_theme_style() {
+	wp_enqueue_style('my-admin-theme', get_template_directory_uri() . '/adminstyle.css' );
+}
+add_action('admin_enqueue_scripts', 'my_admin_theme_style');
+add_action('login_enqueue_scripts', 'my_admin_theme_style');

@@ -15,7 +15,7 @@
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 3rem 0 0;
 }
 
 .page-links {
@@ -57,6 +57,7 @@
   .type-post {
     .entry-body {
       @include max-width-post;
+      @include header-set;
 
 			.entry-title {
 				margin: 0;
@@ -102,6 +103,7 @@
     }
     .entry-body {
       @include max-width-post;
+      @include header-set;
     }
   }
 }
