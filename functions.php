@@ -239,26 +239,6 @@ function my_javascripts() {
 }
 add_action( 'wp_enqueue_scripts', 'my_javascripts' );
 
-/* Custom Post Type
----------------------------------------- */
-function create_posttype() {
-	register_post_type( 'staff',
-		array(
-			'labels' => array(
-				'name' => __( 'Staff' ),
-				'singular_name' => __( 'Staff' )
-			),
-			'public' => true,
-			'has_archive' => true,
-			'rewrite' => array('slug' => 'staff'),
-			'show_in_rest' => true,
-			'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
-			'taxonomies' => array('post_tag','category'),
-		)
-	);
-}
-add_action( 'init', 'create_posttype' );
-
 // ANCHOR - Add Admin CSS
 function my_admin_theme_style() {
 	wp_enqueue_style(
@@ -287,8 +267,8 @@ function cmk23_cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cmk23_cc_mime_types');
 
-// ANCHOR - Add book post type if not exists
-function cmk23_add_book_post_type() {
+// ANCHOR - Add custom post type if not exists
+function cmk23_add_custom_post_type() {
 	if ( ! post_type_exists( 'book' ) ) {
 		register_post_type( 'book',
 			array(
@@ -306,8 +286,25 @@ function cmk23_add_book_post_type() {
 			)
 		);
 	}
+	if ( ! post_type_exists( 'staff' ) ) {
+		register_post_type( 'staff',
+			array(
+				'labels' => array(
+					'name' => __( 'Staff' ),
+					'singular_name' => __( 'Staff' )
+				),
+				'public' => true,
+				'has_archive' => true,
+				'rewrite' => array('slug' => 'staff'),
+				'show_in_rest' => true,
+				'supports' => array('title', 'thumbnail', 'custom-fields'),
+				'menu_icon' => 'dashicons-groups',
+				'taxonomies' => array('post_tag','category'),
+			)
+		);
+	}
 }
-add_action( 'init', 'cmk23_add_book_post_type' );
+add_action( 'init', 'cmk23_add_custom_post_type' );
 
 // ANCHOR - Shortcodes
 require get_template_directory() . '/inc/shortcode-slideshow.php';
