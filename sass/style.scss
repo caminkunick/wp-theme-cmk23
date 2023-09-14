@@ -50,10 +50,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 
-/* Bootstrap
---------------------------------------------- */
-@import "bootstrap/bootstrap.scss";
-
 // Import variables and mixins.
 @import "abstracts/abstracts";
 
@@ -107,5 +103,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* FontAwesome
 --------------------------------------------- */
-@import "../fa/scss/fontawesome.scss";
-@import "../fa/scss/regular.scss";
+@import "../fa/scss/fontawesome";
+@import "../fa/scss/regular";
+@import "../fa/scss/brands";

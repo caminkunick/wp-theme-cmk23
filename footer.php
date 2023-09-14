@@ -12,12 +12,26 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<?php dynamic_sidebar( 'footer-1' ); ?>
-			<?php dynamic_sidebar( 'footer-2' ); ?>
-			<?php dynamic_sidebar( 'footer-3' ); ?>
-			<?php dynamic_sidebar( 'footer-4' ); ?>
-		</div>
+		<div class="footer-container">
+			<div class="site-info">
+				<?php dynamic_sidebar( 'footer-1' ); ?>
+				<?php dynamic_sidebar( 'footer-2' ); ?>
+				<?php dynamic_sidebar( 'footer-3' ); ?>
+				<?php dynamic_sidebar( 'footer-4' ); ?>
+			</div>
+			<div class="typography-caption">
+				&copy;<?php echo date("Y"); ?>
+				<?php
+					$organizer = get_theme_mod( 'cmk__footer_organizer', '' );
+					if( $organizer ){
+						echo $organizer;
+					} else {
+						bloginfo( 'name' );
+					}
+				?>,
+				All Rights Reserved
+			</div>
+		</div><!-- .footer-container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

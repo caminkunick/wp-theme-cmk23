@@ -27,6 +27,8 @@
 		:root {
 			--font-header-family: <?php echo get_theme_mod("cmk__font_h_family", '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif'); ?>;
 			--font-paragraph-family: <?php echo get_theme_mod("cmk__font_p_family", '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif'); ?>;
+			--footer-bg-color: <?php echo get_theme_mod("cmk__footer_bg_color", '#000000'); ?>;
+			--footer-text-color: <?php echo get_theme_mod("cmk__footer_text_color", '#ffffff'); ?>;
 		}
 	</style>
 	<?php wp_head(); ?>
@@ -54,8 +56,9 @@
 				echo '</div>';
 			?>
 		</div><!-- .site-branding -->
-
+		<div class="flex-1"></div>
 		<nav id="site-navigation" class="main-navigation">
+			<div class="menu-toggle"></div>
 			<?php
 			wp_nav_menu(
 				array(
@@ -65,19 +68,10 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
-		<div>
-			<button class="menu-toggle" aria-controls="site-mobile-menu" aria-expanded="false">
-				<i class="fa-regular fa-bars"></i><?php esc_html_e( '', 'cmk23' ); ?>
-			</button>
-		</div>
+		<?php get_template_part('template-parts/navigate','button',array(
+			"class" => "menu-toggle edge-end",
+			"th" => "เมนู",
+			"en" => "Menu",
+			"icon" => "fa-regular fa-chevron-down"
+		)); ?>
 	</header><!-- #masthead -->
-	<nav id="site-mobile-menu" class="site-mobile-menu">
-		<?php
-		wp_nav_menu(
-			array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'mobile-menu',
-			)
-		);
-		?>
-	</nav>

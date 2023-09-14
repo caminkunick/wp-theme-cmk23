@@ -15,7 +15,7 @@ $font-size__h5: 1.875rem;
 $font-size__h6: 1.5rem;
 $font-size__body1: 1.125rem;
 $font-size__body2: 1rem;
-$font-size__caption: 0.75rem;
+$font-size__caption: 0.625rem;
 
 @mixin header-set {
   h1,
@@ -29,21 +29,39 @@ $font-size__caption: 0.75rem;
   }
   > h1 {
     font-size: $font-size__h1;
+    @media screen and (max-width: $max-width__lg) {
+      font-size: $font-size__h2;
+    }
   }
   > h2 {
     font-size: $font-size__h2;
+    @media screen and (max-width: $max-width__lg) {
+      font-size: $font-size__h3;
+    }
   }
   > h3 {
     font-size: $font-size__h3;
+    @media screen and (max-width: $max-width__lg) {
+      font-size: $font-size__h4;
+    }
   }
   > h4 {
     font-size: $font-size__h4;
+    @media screen and (max-width: $max-width__lg) {
+      font-size: $font-size__h5;
+    }
   }
   > h5 {
     font-size: $font-size__h5;
+    @media screen and (max-width: $max-width__lg) {
+      font-size: $font-size__h6;
+    }
   }
   > h6 {
     font-size: $font-size__h6;
+    @media screen and (max-width: $max-width__lg) {
+      font-size: $font-size__body1;
+    }
   }
 }
 

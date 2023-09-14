@@ -45,6 +45,13 @@ function cmk23_customize_register( $wp_customize ) {
 
 	$image_section = $setting_panel->add_section( "cmk__setting_image", "Image" );
 	$image_section->add_control_image( "cmk__placeholder_image", "Place Holder Image" );
+
+	$info_section = $setting_panel->add_section( "cmk__setting_info", "Infomation" );
+	$info_section->add_control_text("cmk__footer_organizer", "Organizer");
+
+	$footer_section = $setting_panel->add_section( "cmk__setting_footer", "Footer" );
+	$footer_section->add_control_color( "cmk__footer_bg_color", "Background Color", "#000000" );
+	$footer_section->add_control_color( "cmk__footer_text_color", "Text Color", "#FFFFFF" );
 }
 add_action( 'customize_register', 'cmk23_customize_register' );
 

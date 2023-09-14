@@ -10,5 +10,26 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+$font__sizes: (
+	h1: 2.5rem,
+	h2: 2rem,
+	h3: 1.75rem,
+	h4: 1.5rem,
+	h5: 1.25rem,
+	h6: 1rem,
+	body1: 1rem,
+	body2: 0.875rem,
+	caption: 0.75rem,
+);
+
+@each $font__size in $font__sizes {
+	$font__size-name: nth($font__size, 1);
+	$font__size-value: nth($font__size, 2);
+
+	.typography-#{$font__size-name} {
+		font-size: $font__size-value;
+	}
+}
+
 @import "headings";
 @import "copy";

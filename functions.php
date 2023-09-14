@@ -9,7 +9,9 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.1' );
+	// define( '_S_VERSION', '1.0.1' );
+	// Replace the version by the last modified time of style.css file.
+	define( '_S_VERSION', filemtime( get_template_directory() . '/style.css' ) );
 }
 
 /**
@@ -119,6 +121,7 @@ add_action( 'after_setup_theme', 'cmk23_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+// ANCHOR - Register Widget Areas
 function cmk23_widgets_init() {
 	function gen_widget($id, $name){
 		return array(
@@ -132,18 +135,6 @@ function cmk23_widgets_init() {
 		);
 	}
 
-	// register_sidebar(
-	// 	array(
-	// 		'name'          => esc_html__( 'Sidebar', 'cmk23' ),
-	// 		'id'            => 'sidebar-1',
-	// 		'description'   => esc_html__( 'Add widgets here.', 'cmk23' ),
-	// 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-	// 		'after_widget'  => '</section>',
-	// 		'before_title'  => '<h2 class="widget-title">',
-	// 		'after_title'   => '</h2>',
-	// 	)
-	// );
-
 	register_sidebar( gen_widget( "sidebar-1", "Sidebar" ) );
 	register_sidebar( gen_widget( "footer-1", "Footer 1" ) );
 	register_sidebar( gen_widget( "footer-2", "Footer 2" ) );
@@ -151,6 +142,15 @@ function cmk23_widgets_init() {
 	register_sidebar( gen_widget( "footer-4", "Footer 4" ) );
 }
 add_action( 'widgets_init', 'cmk23_widgets_init' );
+
+// ANCHOR - Load Template Parts
+function cmk32_get_template_part( $template_name, $part_name=null, $args = array() ) {
+	ob_start();
+	get_template_part($template_name, $part_name, $args);
+	$var = ob_get_contents();
+	ob_end_clean();
+	return $var;
+}
 
 /**
  * Enqueue scripts and styles.
@@ -230,9 +230,12 @@ function my_javascripts() {
 	wp_enqueue_script( 'theme-main-js', 
 	get_template_directory_uri() . '/js/main.js',
 		array(), 
-		_S_VERSION, 
+		filemtime(get_template_directory() . '/js/main.js'),
 		true
 	);
+
+	wp_enqueue_script( 'swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js' );
+	wp_enqueue_style( 'swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'my_javascripts' );
 
@@ -256,17 +259,19 @@ function create_posttype() {
 }
 add_action( 'init', 'create_posttype' );
 
-/* Add Admin CSS
----------------------------------------- */
+// ANCHOR - Add Admin CSS
 function my_admin_theme_style() {
-	wp_enqueue_style('my-admin-theme', get_template_directory_uri() . '/adminstyle.css' );
+	wp_enqueue_style(
+		'my-admin-theme',
+		get_template_directory_uri() . '/adminstyle.css',
+		array(),
+		filemtime(get_template_directory() . '/adminstyle.css')
+	);
 }
 add_action('admin_enqueue_scripts', 'my_admin_theme_style');
 add_action('login_enqueue_scripts', 'my_admin_theme_style');
 
-/* Add Plugin Update Checker
----------------------------------------- */
-
+// ANCHOR - Add Plugin Update Checker
 require get_template_directory() . '/puc/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker(
@@ -274,3 +279,37 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'cmk23'
 );
+
+// ANCHOR - Svg Support
+function cmk23_cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'cmk23_cc_mime_types');
+
+// ANCHOR - Add book post type if not exists
+function cmk23_add_book_post_type() {
+	if ( ! post_type_exists( 'book' ) ) {
+		register_post_type( 'book',
+			array(
+				'labels' => array(
+					'name' => __( 'Books' ),
+					'singular_name' => __( 'Book' )
+				),
+				'public' => true,
+				'has_archive' => true,
+				'rewrite' => array('slug' => 'book'),
+				'show_in_rest' => true,
+				'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+				'menu_icon' => 'dashicons-book',
+				'taxonomies' => array('post_tag','category'),
+			)
+		);
+	}
+}
+add_action( 'init', 'cmk23_add_book_post_type' );
+
+// ANCHOR - Shortcodes
+require get_template_directory() . '/inc/shortcode-slideshow.php';
+require get_template_directory() . '/inc/shortcode-jpaenc.php';
+require get_template_directory() . '/inc/shortcode-highlight.php';
