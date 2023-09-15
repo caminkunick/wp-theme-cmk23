@@ -228,10 +228,9 @@ add_action( 'admin_head', 'fix_svg' );
 ---------------------------------------- */
 function my_javascripts() {
 	wp_enqueue_script( 'theme-main-js', 
-	get_template_directory_uri() . '/js/main.js',
+		get_template_directory_uri() . '/js/main.js',
 		array(), 
 		filemtime(get_template_directory() . '/js/main.js'),
-		true
 	);
 
 	wp_enqueue_script( 'swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js' );
@@ -241,6 +240,11 @@ add_action( 'wp_enqueue_scripts', 'my_javascripts' );
 
 // ANCHOR - Add Admin CSS
 function my_admin_theme_style() {
+	wp_enqueue_script( 'theme-main', 
+		get_template_directory_uri() . '/js/main.js',
+		array(), 
+		filemtime(get_template_directory() . '/js/main.js'),
+	);
 	wp_enqueue_style(
 		'my-admin-theme',
 		get_template_directory_uri() . '/adminstyle.css',
@@ -266,6 +270,15 @@ function cmk23_cc_mime_types($mimes) {
 	return $mimes;
 }
 add_filter('upload_mimes', 'cmk23_cc_mime_types');
+
+// ANCHOR - Shortcodes
+require get_template_directory() . '/inc/shortcode-slideshow.php';
+require get_template_directory() . '/inc/shortcode-jpaenc.php';
+require get_template_directory() . '/inc/shortcode-highlight.php';
+require get_template_directory() . '/inc/shortcode-staff.php';
+
+// ANCHOR - Post Metabox
+require get_template_directory() . '/inc/metabox-staff.php';
 
 // ANCHOR - Add custom post type if not exists
 function cmk23_add_custom_post_type() {
@@ -297,7 +310,7 @@ function cmk23_add_custom_post_type() {
 				'has_archive' => true,
 				'rewrite' => array('slug' => 'staff'),
 				'show_in_rest' => true,
-				'supports' => array('title', 'thumbnail', 'custom-fields'),
+				'supports' => array('title', 'editor', 'thumbnail'),
 				'menu_icon' => 'dashicons-groups',
 				'taxonomies' => array('post_tag','category'),
 			)
@@ -305,8 +318,3 @@ function cmk23_add_custom_post_type() {
 	}
 }
 add_action( 'init', 'cmk23_add_custom_post_type' );
-
-// ANCHOR - Shortcodes
-require get_template_directory() . '/inc/shortcode-slideshow.php';
-require get_template_directory() . '/inc/shortcode-jpaenc.php';
-require get_template_directory() . '/inc/shortcode-highlight.php';

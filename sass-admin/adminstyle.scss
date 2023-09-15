@@ -10,3 +10,11 @@
 # Editor
 --------------------------------------------------------------*/
 @import "editor/editor";
+
+// ANCHOR - Buttons
+@import "button";
+
+// ANCHOR - FontAwesome
+@import "../fa/scss/fontawesome";
+@import "../fa/scss/solid";
+@import "../fa/scss/regular";

@@ -7,6 +7,8 @@
  * @package cmk23
  */
 
+$staff_data = get_post_meta(get_the_ID(), '_staff_data', true);
+$staff_data = json_decode($staff_data, true);
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -15,6 +17,13 @@
 		
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php
+			if(isset($staff_data["name"]) && is_array($staff_data["name"])){
+				foreach($staff_data["name"] as $name){
+					echo "<h1 class=\"entry-title\">" . $name . "</h2>";
+				}
+			}
+			?>
 		</header><!-- .entry-header -->
 
 

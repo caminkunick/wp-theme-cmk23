@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "button.css",
+	"sources": [
+		"sass-admin/button.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,YAAY,CAAC;CACX,UAAU,EAAE,IAAI;CAChB,MAAM,EAAE,IAAI;CACZ,MAAM,EAAE,OAAO;CACf,OAAO,EAAE,EAAE;CACZ"
+}

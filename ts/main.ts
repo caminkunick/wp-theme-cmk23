@@ -1,3 +1,5 @@
+import { MetaStaff } from "./metabox/staff";
+
 (() => {
   const buttonToggle = document.querySelectorAll(".menu-toggle");
   const menu = document.querySelector<HTMLDivElement>(".main-navigation");
@@ -23,3 +25,6 @@
     }
   });
 })();
+
+// @ts-ignore
+globalThis.MetaStaff = MetaStaff;
