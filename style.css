@@ -560,603 +560,603 @@ table {
 }
 
 .p-1 {
-	padding: 8px;
+	padding: 8px !important;
 }
 
 .pt-1 {
-	padding-top: 8px;
+	padding-top: 8px !important;
 }
 
 .pb-1 {
-	padding-bottom: 8px;
+	padding-bottom: 8px !important;
 }
 
 .pl-1 {
-	padding-left: 8px;
+	padding-left: 8px !important;
 }
 
 .pr-1 {
-	padding-right: 8px;
+	padding-right: 8px !important;
 }
 
 .px-1 {
-	padding-left: 8px;
-	padding-right: 8px;
+	padding-left: 8px !important;
+	padding-right: 8px !important;
 }
 
 .py-1 {
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
 }
 
 .m-1 {
-	margin: 8px;
+	margin: 8px !important;
 }
 
 .mt-1 {
-	margin-top: 8px;
+	margin-top: 8px !important;
 }
 
 .mb-1 {
-	margin-bottom: 8px;
+	margin-bottom: 8px !important;
 }
 
 .ml-1 {
-	margin-left: 8px;
+	margin-left: 8px !important;
 }
 
 .mr-1 {
-	margin-right: 8px;
+	margin-right: 8px !important;
 }
 
 .mx-1 {
-	margin-left: 8px;
-	margin-right: 8px;
+	margin-left: 8px !important;
+	margin-right: 8px !important;
 }
 
 .my-1 {
-	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-top: 8px !important;
+	margin-bottom: 8px !important;
 }
 
 .p-2 {
-	padding: 16px;
+	padding: 16px !important;
 }
 
 .pt-2 {
-	padding-top: 16px;
+	padding-top: 16px !important;
 }
 
 .pb-2 {
-	padding-bottom: 16px;
+	padding-bottom: 16px !important;
 }
 
 .pl-2 {
-	padding-left: 16px;
+	padding-left: 16px !important;
 }
 
 .pr-2 {
-	padding-right: 16px;
+	padding-right: 16px !important;
 }
 
 .px-2 {
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: 16px !important;
+	padding-right: 16px !important;
 }
 
 .py-2 {
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 16px !important;
+	padding-bottom: 16px !important;
 }
 
 .m-2 {
-	margin: 16px;
+	margin: 16px !important;
 }
 
 .mt-2 {
-	margin-top: 16px;
+	margin-top: 16px !important;
 }
 
 .mb-2 {
-	margin-bottom: 16px;
+	margin-bottom: 16px !important;
 }
 
 .ml-2 {
-	margin-left: 16px;
+	margin-left: 16px !important;
 }
 
 .mr-2 {
-	margin-right: 16px;
+	margin-right: 16px !important;
 }
 
 .mx-2 {
-	margin-left: 16px;
-	margin-right: 16px;
+	margin-left: 16px !important;
+	margin-right: 16px !important;
 }
 
 .my-2 {
-	margin-top: 16px;
-	margin-bottom: 16px;
+	margin-top: 16px !important;
+	margin-bottom: 16px !important;
 }
 
 .p-3 {
-	padding: 24px;
+	padding: 24px !important;
 }
 
 .pt-3 {
-	padding-top: 24px;
+	padding-top: 24px !important;
 }
 
 .pb-3 {
-	padding-bottom: 24px;
+	padding-bottom: 24px !important;
 }
 
 .pl-3 {
-	padding-left: 24px;
+	padding-left: 24px !important;
 }
 
 .pr-3 {
-	padding-right: 24px;
+	padding-right: 24px !important;
 }
 
 .px-3 {
-	padding-left: 24px;
-	padding-right: 24px;
+	padding-left: 24px !important;
+	padding-right: 24px !important;
 }
 
 .py-3 {
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding-top: 24px !important;
+	padding-bottom: 24px !important;
 }
 
 .m-3 {
-	margin: 24px;
+	margin: 24px !important;
 }
 
 .mt-3 {
-	margin-top: 24px;
+	margin-top: 24px !important;
 }
 
 .mb-3 {
-	margin-bottom: 24px;
+	margin-bottom: 24px !important;
 }
 
 .ml-3 {
-	margin-left: 24px;
+	margin-left: 24px !important;
 }
 
 .mr-3 {
-	margin-right: 24px;
+	margin-right: 24px !important;
 }
 
 .mx-3 {
-	margin-left: 24px;
-	margin-right: 24px;
+	margin-left: 24px !important;
+	margin-right: 24px !important;
 }
 
 .my-3 {
-	margin-top: 24px;
-	margin-bottom: 24px;
+	margin-top: 24px !important;
+	margin-bottom: 24px !important;
 }
 
 .p-4 {
-	padding: 32px;
+	padding: 32px !important;
 }
 
 .pt-4 {
-	padding-top: 32px;
+	padding-top: 32px !important;
 }
 
 .pb-4 {
-	padding-bottom: 32px;
+	padding-bottom: 32px !important;
 }
 
 .pl-4 {
-	padding-left: 32px;
+	padding-left: 32px !important;
 }
 
 .pr-4 {
-	padding-right: 32px;
+	padding-right: 32px !important;
 }
 
 .px-4 {
-	padding-left: 32px;
-	padding-right: 32px;
+	padding-left: 32px !important;
+	padding-right: 32px !important;
 }
 
 .py-4 {
-	padding-top: 32px;
-	padding-bottom: 32px;
+	padding-top: 32px !important;
+	padding-bottom: 32px !important;
 }
 
 .m-4 {
-	margin: 32px;
+	margin: 32px !important;
 }
 
 .mt-4 {
-	margin-top: 32px;
+	margin-top: 32px !important;
 }
 
 .mb-4 {
-	margin-bottom: 32px;
+	margin-bottom: 32px !important;
 }
 
 .ml-4 {
-	margin-left: 32px;
+	margin-left: 32px !important;
 }
 
 .mr-4 {
-	margin-right: 32px;
+	margin-right: 32px !important;
 }
 
 .mx-4 {
-	margin-left: 32px;
-	margin-right: 32px;
+	margin-left: 32px !important;
+	margin-right: 32px !important;
 }
 
 .my-4 {
-	margin-top: 32px;
-	margin-bottom: 32px;
+	margin-top: 32px !important;
+	margin-bottom: 32px !important;
 }
 
 .p-5 {
-	padding: 40px;
+	padding: 40px !important;
 }
 
 .pt-5 {
-	padding-top: 40px;
+	padding-top: 40px !important;
 }
 
 .pb-5 {
-	padding-bottom: 40px;
+	padding-bottom: 40px !important;
 }
 
 .pl-5 {
-	padding-left: 40px;
+	padding-left: 40px !important;
 }
 
 .pr-5 {
-	padding-right: 40px;
+	padding-right: 40px !important;
 }
 
 .px-5 {
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 40px !important;
+	padding-right: 40px !important;
 }
 
 .py-5 {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 40px !important;
+	padding-bottom: 40px !important;
 }
 
 .m-5 {
-	margin: 40px;
+	margin: 40px !important;
 }
 
 .mt-5 {
-	margin-top: 40px;
+	margin-top: 40px !important;
 }
 
 .mb-5 {
-	margin-bottom: 40px;
+	margin-bottom: 40px !important;
 }
 
 .ml-5 {
-	margin-left: 40px;
+	margin-left: 40px !important;
 }
 
 .mr-5 {
-	margin-right: 40px;
+	margin-right: 40px !important;
 }
 
 .mx-5 {
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 40px !important;
+	margin-right: 40px !important;
 }
 
 .my-5 {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 40px !important;
+	margin-bottom: 40px !important;
 }
 
 .p-6 {
-	padding: 48px;
+	padding: 48px !important;
 }
 
 .pt-6 {
-	padding-top: 48px;
+	padding-top: 48px !important;
 }
 
 .pb-6 {
-	padding-bottom: 48px;
+	padding-bottom: 48px !important;
 }
 
 .pl-6 {
-	padding-left: 48px;
+	padding-left: 48px !important;
 }
 
 .pr-6 {
-	padding-right: 48px;
+	padding-right: 48px !important;
 }
 
 .px-6 {
-	padding-left: 48px;
-	padding-right: 48px;
+	padding-left: 48px !important;
+	padding-right: 48px !important;
 }
 
 .py-6 {
-	padding-top: 48px;
-	padding-bottom: 48px;
+	padding-top: 48px !important;
+	padding-bottom: 48px !important;
 }
 
 .m-6 {
-	margin: 48px;
+	margin: 48px !important;
 }
 
 .mt-6 {
-	margin-top: 48px;
+	margin-top: 48px !important;
 }
 
 .mb-6 {
-	margin-bottom: 48px;
+	margin-bottom: 48px !important;
 }
 
 .ml-6 {
-	margin-left: 48px;
+	margin-left: 48px !important;
 }
 
 .mr-6 {
-	margin-right: 48px;
+	margin-right: 48px !important;
 }
 
 .mx-6 {
-	margin-left: 48px;
-	margin-right: 48px;
+	margin-left: 48px !important;
+	margin-right: 48px !important;
 }
 
 .my-6 {
-	margin-top: 48px;
-	margin-bottom: 48px;
+	margin-top: 48px !important;
+	margin-bottom: 48px !important;
 }
 
 .p-7 {
-	padding: 56px;
+	padding: 56px !important;
 }
 
 .pt-7 {
-	padding-top: 56px;
+	padding-top: 56px !important;
 }
 
 .pb-7 {
-	padding-bottom: 56px;
+	padding-bottom: 56px !important;
 }
 
 .pl-7 {
-	padding-left: 56px;
+	padding-left: 56px !important;
 }
 
 .pr-7 {
-	padding-right: 56px;
+	padding-right: 56px !important;
 }
 
 .px-7 {
-	padding-left: 56px;
-	padding-right: 56px;
+	padding-left: 56px !important;
+	padding-right: 56px !important;
 }
 
 .py-7 {
-	padding-top: 56px;
-	padding-bottom: 56px;
+	padding-top: 56px !important;
+	padding-bottom: 56px !important;
 }
 
 .m-7 {
-	margin: 56px;
+	margin: 56px !important;
 }
 
 .mt-7 {
-	margin-top: 56px;
+	margin-top: 56px !important;
 }
 
 .mb-7 {
-	margin-bottom: 56px;
+	margin-bottom: 56px !important;
 }
 
 .ml-7 {
-	margin-left: 56px;
+	margin-left: 56px !important;
 }
 
 .mr-7 {
-	margin-right: 56px;
+	margin-right: 56px !important;
 }
 
 .mx-7 {
-	margin-left: 56px;
-	margin-right: 56px;
+	margin-left: 56px !important;
+	margin-right: 56px !important;
 }
 
 .my-7 {
-	margin-top: 56px;
-	margin-bottom: 56px;
+	margin-top: 56px !important;
+	margin-bottom: 56px !important;
 }
 
 .p-8 {
-	padding: 64px;
+	padding: 64px !important;
 }
 
 .pt-8 {
-	padding-top: 64px;
+	padding-top: 64px !important;
 }
 
 .pb-8 {
-	padding-bottom: 64px;
+	padding-bottom: 64px !important;
 }
 
 .pl-8 {
-	padding-left: 64px;
+	padding-left: 64px !important;
 }
 
 .pr-8 {
-	padding-right: 64px;
+	padding-right: 64px !important;
 }
 
 .px-8 {
-	padding-left: 64px;
-	padding-right: 64px;
+	padding-left: 64px !important;
+	padding-right: 64px !important;
 }
 
 .py-8 {
-	padding-top: 64px;
-	padding-bottom: 64px;
+	padding-top: 64px !important;
+	padding-bottom: 64px !important;
 }
 
 .m-8 {
-	margin: 64px;
+	margin: 64px !important;
 }
 
 .mt-8 {
-	margin-top: 64px;
+	margin-top: 64px !important;
 }
 
 .mb-8 {
-	margin-bottom: 64px;
+	margin-bottom: 64px !important;
 }
 
 .ml-8 {
-	margin-left: 64px;
+	margin-left: 64px !important;
 }
 
 .mr-8 {
-	margin-right: 64px;
+	margin-right: 64px !important;
 }
 
 .mx-8 {
-	margin-left: 64px;
-	margin-right: 64px;
+	margin-left: 64px !important;
+	margin-right: 64px !important;
 }
 
 .my-8 {
-	margin-top: 64px;
-	margin-bottom: 64px;
+	margin-top: 64px !important;
+	margin-bottom: 64px !important;
 }
 
 .p-9 {
-	padding: 72px;
+	padding: 72px !important;
 }
 
 .pt-9 {
-	padding-top: 72px;
+	padding-top: 72px !important;
 }
 
 .pb-9 {
-	padding-bottom: 72px;
+	padding-bottom: 72px !important;
 }
 
 .pl-9 {
-	padding-left: 72px;
+	padding-left: 72px !important;
 }
 
 .pr-9 {
-	padding-right: 72px;
+	padding-right: 72px !important;
 }
 
 .px-9 {
-	padding-left: 72px;
-	padding-right: 72px;
+	padding-left: 72px !important;
+	padding-right: 72px !important;
 }
 
 .py-9 {
-	padding-top: 72px;
-	padding-bottom: 72px;
+	padding-top: 72px !important;
+	padding-bottom: 72px !important;
 }
 
 .m-9 {
-	margin: 72px;
+	margin: 72px !important;
 }
 
 .mt-9 {
-	margin-top: 72px;
+	margin-top: 72px !important;
 }
 
 .mb-9 {
-	margin-bottom: 72px;
+	margin-bottom: 72px !important;
 }
 
 .ml-9 {
-	margin-left: 72px;
+	margin-left: 72px !important;
 }
 
 .mr-9 {
-	margin-right: 72px;
+	margin-right: 72px !important;
 }
 
 .mx-9 {
-	margin-left: 72px;
-	margin-right: 72px;
+	margin-left: 72px !important;
+	margin-right: 72px !important;
 }
 
 .my-9 {
-	margin-top: 72px;
-	margin-bottom: 72px;
+	margin-top: 72px !important;
+	margin-bottom: 72px !important;
 }
 
 .p-10 {
-	padding: 80px;
+	padding: 80px !important;
 }
 
 .pt-10 {
-	padding-top: 80px;
+	padding-top: 80px !important;
 }
 
 .pb-10 {
-	padding-bottom: 80px;
+	padding-bottom: 80px !important;
 }
 
 .pl-10 {
-	padding-left: 80px;
+	padding-left: 80px !important;
 }
 
 .pr-10 {
-	padding-right: 80px;
+	padding-right: 80px !important;
 }
 
 .px-10 {
-	padding-left: 80px;
-	padding-right: 80px;
+	padding-left: 80px !important;
+	padding-right: 80px !important;
 }
 
 .py-10 {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 80px !important;
+	padding-bottom: 80px !important;
 }
 
 .m-10 {
-	margin: 80px;
+	margin: 80px !important;
 }
 
 .mt-10 {
-	margin-top: 80px;
+	margin-top: 80px !important;
 }
 
 .mb-10 {
-	margin-bottom: 80px;
+	margin-bottom: 80px !important;
 }
 
 .ml-10 {
-	margin-left: 80px;
+	margin-left: 80px !important;
 }
 
 .mr-10 {
-	margin-right: 80px;
+	margin-right: 80px !important;
 }
 
 .mx-10 {
-	margin-left: 80px;
-	margin-right: 80px;
+	margin-left: 80px !important;
+	margin-right: 80px !important;
 }
 
 .my-10 {
-	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-top: 80px !important;
+	margin-bottom: 80px !important;
 }
 
 .mx-auto {
@@ -1170,43 +1170,492 @@ table {
 }
 
 .stack-gap-1 {
-	gap: 1rem;
+	gap: 1rem !important;
 }
 
 .stack-gap-2 {
-	gap: 2rem;
+	gap: 2rem !important;
 }
 
 .stack-gap-3 {
-	gap: 3rem;
+	gap: 3rem !important;
 }
 
 .stack-gap-4 {
-	gap: 4rem;
+	gap: 4rem !important;
 }
 
 .stack-gap-5 {
-	gap: 5rem;
+	gap: 5rem !important;
 }
 
 .stack-gap-6 {
-	gap: 6rem;
+	gap: 6rem !important;
 }
 
 .stack-gap-7 {
-	gap: 7rem;
+	gap: 7rem !important;
 }
 
 .stack-gap-8 {
-	gap: 8rem;
+	gap: 8rem !important;
 }
 
 .stack-gap-9 {
-	gap: 9rem;
+	gap: 9rem !important;
 }
 
 .stack-gap-10 {
+	gap: 10rem !important;
+}
+
+.wp-block-separator {
+	max-width: 720px;
+	height: 1px;
+	width: 100%;
+	background-color: #0002;
+	border: none;
+}
+
+.typography-color-primary {
+	color: #4285F4;
+}
+
+.typography-color-secondary {
+	color: #757575;
+}
+
+.typography-color-info {
+	color: #4285F4;
+}
+
+.typography-color-success {
+	color: #0F9D58;
+}
+
+.typography-color-warning {
+	color: #F4B400;
+}
+
+.typography-color-danger {
+	color: #DB4437;
+}
+
+.klc-image-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	padding-inline: 1rem;
+}
+
+.klc-image-header .wp-block-image {
+	display: flex;
+	height: 36px;
+	width: fit-content;
+	align-items: center;
+}
+
+.klc-image-header .wp-block-image img {
+	display: block;
+	height: 100% !important;
+	width: auto !important;
+}
+
+.klc-image-header .wp-block-image:not(:last-child)::after {
+	content: "X";
+	display: block;
+	font-size: 48px;
+	margin-left: 1.5rem;
+	line-height: 1;
+}
+
+.klc-image-header .components-resizable-box__container {
+	height: 100% !important;
+	width: fit-content !important;
+}
+
+.klc-facebook-video {
+	display: flex !important;
+	margin-inline: auto !important;
+}
+
+[class*="btn-outline"] {
+	background-color: transparent;
+}
+
+.btn-outline-primary-group .wp-element-button {
+	background-color: transparent;
+	color: #4285F4;
+	border: 1px solid;
+	border-color: #4285F4;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-primary-group .wp-element-button:hover {
+	background-color: #4285F4;
+	color: white;
+}
+
+.btn-outline-secondary-group .wp-element-button {
+	background-color: transparent;
+	color: #757575;
+	border: 1px solid;
+	border-color: #757575;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-secondary-group .wp-element-button:hover {
+	background-color: #757575;
+	color: white;
+}
+
+.btn-outline-info-group .wp-element-button {
+	background-color: transparent;
+	color: #4285F4;
+	border: 1px solid;
+	border-color: #4285F4;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-info-group .wp-element-button:hover {
+	background-color: #4285F4;
+	color: white;
+}
+
+.btn-outline-success-group .wp-element-button {
+	background-color: transparent;
+	color: #0F9D58;
+	border: 1px solid;
+	border-color: #0F9D58;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-success-group .wp-element-button:hover {
+	background-color: #0F9D58;
+	color: white;
+}
+
+.btn-outline-warning-group .wp-element-button {
+	background-color: transparent;
+	color: #F4B400;
+	border: 1px solid;
+	border-color: #F4B400;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-warning-group .wp-element-button:hover {
+	background-color: #F4B400;
+	color: white;
+}
+
+.btn-outline-danger-group .wp-element-button {
+	background-color: transparent;
+	color: #DB4437;
+	border: 1px solid;
+	border-color: #DB4437;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-danger-group .wp-element-button:hover {
+	background-color: #DB4437;
+	color: white;
+}
+
+.max-width-sm {
+	max-width: 640px;
+}
+
+.max-width-post {
+	max-width: 720px;
+}
+
+.max-width-md {
+	max-width: 960px;
+}
+
+.max-width-lg {
+	max-width: 1280px;
+}
+
+.max-width-xl {
+	max-width: 1920px;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-cols-1 {
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-1 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-1 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-1 {
+	gap: 1rem;
+}
+
+.grid-cols-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-2 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-2 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-2 {
+	gap: 2rem;
+}
+
+.grid-cols-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-3 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-3 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-3 {
+	gap: 3rem;
+}
+
+.grid-cols-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-4 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-4 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-4 {
+	gap: 4rem;
+}
+
+.grid-cols-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-5 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-5 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-5 {
+	gap: 5rem;
+}
+
+.grid-cols-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-cols-6 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-6 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-6 {
+	gap: 6rem;
+}
+
+.grid-cols-7 {
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-cols-7 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-7 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-7 {
+	gap: 7rem;
+}
+
+.grid-cols-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-cols-8 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-8 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-8 {
+	gap: 8rem;
+}
+
+.grid-cols-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.grid-cols-9 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-9 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-9 {
+	gap: 9rem;
+}
+
+.grid-cols-10 {
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-cols-10 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-10 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-10 {
 	gap: 10rem;
+}
+
+.grid-cols-11 {
+	grid-template-columns: repeat(11, 1fr);
+}
+
+.grid-cols-11 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-11 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-11 {
+	gap: 11rem;
+}
+
+.grid-cols-12 {
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-cols-12 .wp-block-image {
+	margin: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	position: relative;
+}
+
+.grid-cols-12 .wp-block-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.gap-12 {
+	gap: 12rem;
+}
+
+.group-hover-grow > * {
+	transition: all 0.2s ease-in-out;
+}
+
+.group-hover-grow > *:hover {
+	transform: scale(1.05);
 }
 
 .site-footer {
@@ -1640,6 +2089,9 @@ body.admin-bar .site-header {
 /* Post Edit Link
 ---------------------------------------- */
 .post-edit-link {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
 	margin-top: 1rem;
 	text-decoration: none;
 	display: inline-block;
@@ -1648,6 +2100,7 @@ body.admin-bar .site-header {
 	color: var(--bs-warning, "inherit") !important;
 	border: solid 1px currentColor;
 	transition: all 0.25s;
+	background-color: #FFF8;
 }
 
 .post-edit-link::before {
@@ -1780,6 +2233,38 @@ body.page-template-default .page-content, body.page-template-default
 	margin: 0;
 	font-size: 48px;
 	line-height: 1.1;
+}
+
+.page-template-default .type-page .entry-content > p {
+	max-width: 720px;
+	margin-inline: auto;
+	padding-inline: 1rem;
+	line-height: 1.3;
+}
+
+.page-template-default .type-page .entry-content > p::after {
+	content: " ";
+}
+
+.page-template-default .type-page .entry-content .wp-block-embed-youtube {
+	margin-inline: auto;
+}
+
+.page-template-default .type-page .entry-content .wp-block-embed-youtube .wp-block-embed__wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.page-template-default .type-page .entry-content .klc-image-sm {
+	width: 100%;
+	max-width: 360px;
+	margin-inline: auto;
+}
+
+.page-template-default .type-page .entry-content .klc-image-md {
+	width: 100%;
+	max-width: 576px;
+	margin-inline: auto;
 }
 
 .page-template-page-staff .type-page .entry-body {
@@ -2430,6 +2915,31 @@ body.archive .site-main .posts-navigation {
 	.entry-content .wp-block-group > h6 {
 		font-size: 1.125rem;
 	}
+}
+
+.wp-block-post-content .wp-block-image,
+.entry-content .wp-block-image {
+	margin: 0;
+	position: relative;
+}
+
+.wp-block-post-content .wp-block-image.feature-image,
+.entry-content .wp-block-image.feature-image {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+
+.wp-block-post-content .wp-block-image.feature-image img,
+.entry-content .wp-block-image.feature-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.wp-block-post-content .wp-block-separator,
+.entry-content .wp-block-separator {
+	max-width: 720px;
+	border: none;
 }
 
 .jpaenc {
@@ -20315,6 +20825,29 @@ readers do not read off random characters that represent icons */
  */
 :root, :host {
 	--fa-style-family-classic: 'Font Awesome 6 Pro';
+	--fa-font-solid: normal 900 1em/1 'Font Awesome 6 Pro';
+}
+
+@font-face {
+	font-family: 'Font Awesome 6 Pro';
+	font-style: normal;
+	font-weight: 900;
+	font-display: block;
+	src: url("./fa/webfonts/fa-solid-900.woff2") format("woff2"), url("./fa/webfonts/fa-solid-900.ttf") format("truetype");
+}
+
+.fas,
+.fa-solid {
+	font-weight: 900;
+}
+
+/*!
+ * Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+:root, :host {
+	--fa-style-family-classic: 'Font Awesome 6 Pro';
 	--fa-font-regular: normal 400 1em/1 'Font Awesome 6 Pro';
 }
 
@@ -20329,6 +20862,91 @@ readers do not read off random characters that represent icons */
 .far,
 .fa-regular {
 	font-weight: 400;
+}
+
+/*!
+ * Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+:root, :host {
+	--fa-style-family-classic: 'Font Awesome 6 Pro';
+	--fa-font-light: normal 300 1em/1 'Font Awesome 6 Pro';
+}
+
+@font-face {
+	font-family: 'Font Awesome 6 Pro';
+	font-style: normal;
+	font-weight: 300;
+	font-display: block;
+	src: url("./fa/webfonts/fa-light-300.woff2") format("woff2"), url("./fa/webfonts/fa-light-300.ttf") format("truetype");
+}
+
+.fal,
+.fa-light {
+	font-weight: 300;
+}
+
+/*!
+ * Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+:root, :host {
+	--fa-style-family-duotone: 'Font Awesome 6 Duotone';
+	--fa-font-duotone: normal 900 1em/1 'Font Awesome 6 Duotone';
+}
+
+@font-face {
+	font-family: 'Font Awesome 6 Duotone';
+	font-style: normal;
+	font-weight: 900;
+	font-display: block;
+	src: url("./fa/webfonts/fa-duotone-900.woff2") format("woff2"), url("./fa/webfonts/fa-duotone-900.ttf") format("truetype");
+}
+
+.fad,
+.fa-duotone {
+	position: relative;
+	font-weight: 900;
+	letter-spacing: normal;
+}
+
+.fad::before,
+.fa-duotone::before {
+	position: absolute;
+	color: var(--fa-primary-color, inherit);
+	opacity: var(--fa-primary-opacity, 1);
+}
+
+.fad::after,
+.fa-duotone::after {
+	color: var(--fa-secondary-color, inherit);
+	opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.fa-swap-opacity .fad::before,
+.fa-swap-opacity .fa-duotone::before,
+.fad.fa-swap-opacity::before,
+.fa-duotone.fa-swap-opacity::before {
+	opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.fa-swap-opacity .fad::after,
+.fa-swap-opacity .fa-duotone::after,
+.fad.fa-swap-opacity::after,
+.fa-duotone.fa-swap-opacity::after {
+	opacity: var(--fa-primary-opacity, 1);
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+	color: var(--fa-inverse, #fff);
+}
+
+.fad.fa-stack-1x, .fad.fa-stack-2x,
+.fa-duotone.fa-stack-1x, .fa-duotone.fa-stack-2x {
+	position: absolute;
 }
 
 /*!

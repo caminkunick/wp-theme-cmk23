@@ -162,7 +162,11 @@
 
 /* Post Edit Link
 ---------------------------------------- */
+// ANCHOR - post-edit-link
 .post-edit-link {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
   margin-top: 1rem;
   text-decoration: none;
   display: inline-block;
@@ -171,6 +175,7 @@
   color: var(--bs-warning, 'inherit') !important;
   border: solid 1px currentColor;
   transition: all 0.25s;
+  background-color: #FFF8;
   &::before {
     content: "";
     font-family: 'Font Awesome 6 Pro';

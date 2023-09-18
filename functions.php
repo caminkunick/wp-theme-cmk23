@@ -277,6 +277,10 @@ require get_template_directory() . '/inc/shortcode-jpaenc.php';
 require get_template_directory() . '/inc/shortcode-highlight.php';
 require get_template_directory() . '/inc/shortcode-staff.php';
 
+// ANCHOR - Widget
+require get_template_directory() . '/plugins/fa/fontawesome.php';
+
+
 // ANCHOR - Post Metabox
 require get_template_directory() . '/inc/metabox-staff.php';
 

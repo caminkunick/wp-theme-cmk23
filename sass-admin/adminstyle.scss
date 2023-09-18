@@ -1,6 +1,9 @@
 // Import variables and mixins.
 @import "../sass/abstracts/abstracts";
 
+// ANCHOR - Base
+@import "../sass/base/elements/padding";
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -10,6 +13,7 @@
 # Editor
 --------------------------------------------------------------*/
 @import "editor/editor";
+@import "editor/faicon";
 
 // ANCHOR - Buttons
 @import "button";
@@ -18,3 +22,6 @@
 @import "../fa/scss/fontawesome";
 @import "../fa/scss/solid";
 @import "../fa/scss/regular";
+@import "../fa/scss/light";
+@import "../fa/scss/duotone";
+@import "../fa/scss/brands";
