@@ -51,9 +51,16 @@
     "watch:all": "nodemon -e ts,tsx,scss --exec \"clear && yarn compile:style && yarn compile:adminstyle && yarn compile:js\""
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/pro-regular-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "preact": "^10.17.1"
+    "@mui/material": "^5.14.10",
+    "@mui/utils": "^5.14.10",
+    "moment": "^2.29.4",
+    "preact": "^10.17.1",
+    "react": "npm:@preact/compat@^17.1.2",
+    "react-dom": "npm:@preact/compat@^17.1.2"
   }
 }

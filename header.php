@@ -68,10 +68,20 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		<div id="search-box"></div>
 		<?php get_template_part('template-parts/navigate','button',array(
+			"id" => "nav-search-button",
+			"class" => "menu-toggle",
+			"th" => "ค้นหา",
+			"en" => "Search",
+			"icon" => "fa-regular fa-search"
+		)); ?>
+		<?php get_template_part('template-parts/navigate','button',array(
+			"id" => "nav-menu-button",
 			"class" => "menu-toggle edge-end",
 			"th" => "เมนู",
 			"en" => "Menu",
 			"icon" => "fa-regular fa-chevron-down"
 		)); ?>
 	</header><!-- #masthead -->
+	<?php get_template_part( 'template-parts/navigate', 'bar' ); ?>

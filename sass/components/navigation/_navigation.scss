@@ -12,7 +12,7 @@
   body.admin-bar & {
     top: 32px;
     height: calc(100dvh - 32px);
-    
+
     @media screen and (min-width: 600px) and (max-width: 782px) {
       top: 46px;
       height: calc(100dvh - 46px);
@@ -32,7 +32,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding: 3rem 1.5rem;
-    box-shadow: -8px 0 16px rgba(0,0,0,0.125);
+    box-shadow: -8px 0 16px rgba(0, 0, 0, 0.125);
     animation: slide-left 0.25s ease-in-out;
 
     ul {
@@ -65,7 +65,7 @@
       padding-top: 1rem;
       padding-left: 1rem;
       gap: 1rem;
-      
+
       li {
         a {
           font-size: $font-size__body1;
@@ -172,18 +172,18 @@
   display: inline-block;
   border-radius: 0.25rem;
   padding: 4px 16px;
-  color: var(--bs-warning, 'inherit') !important;
+  color: var(--bs-warning, "inherit") !important;
   border: solid 1px currentColor;
   transition: all 0.25s;
-  background-color: #FFF8;
+  background-color: #fff8;
   &::before {
     content: "";
-    font-family: 'Font Awesome 6 Pro';
+    font-family: "Font Awesome 6 Pro";
     margin-right: 0.5rem;
   }
   &:hover {
     color: white !important;
-    background-color: var(--bs-warning, 'inherit') !important;
+    background-color: var(--bs-warning, "inherit") !important;
   }
 }
 
@@ -199,7 +199,7 @@
   cursor: pointer;
   border-radius: 0;
   transition: all 0.25s;
-  
+
   .text {
     display: flex;
     flex-direction: column;
@@ -212,7 +212,7 @@
     font-size: 0.5em;
     text-transform: uppercase;
   }
-  
+
   &:hover {
     background-color: rgba(#000, 0.1);
   }
@@ -268,3 +268,81 @@
   }
 }
 // !SECTION
+
+// ANCHOR - cmk-drawer
+.cmk-drawer {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0008;
+  z-index: 1201;
+
+  .backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .paper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    max-width: 360px;
+    height: 100%;
+    background-color: #fff;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+    animation: cmk-drawer-enter 0.5s cubic-bezier(0, 0, 0, 1.5);
+
+    &.leave {
+      animation: cmk-drawer-leave 0.5s cubic-bezier(0, 0, 0, 1.5);
+    }
+
+    ul.menu {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      > li {
+        font-weight: bold;
+      }
+    }
+
+    ul.sub-menu {
+      padding: 0;
+      margin: 0;
+      padding-left: 1.5rem;
+      padding-top: 0.5rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
+  }
+
+  @keyframes cmk-drawer-enter {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes cmk-drawer-leave {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}

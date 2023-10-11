@@ -1,4 +1,6 @@
 import { MetaStaff } from "./metabox/staff";
+import { SearchBox } from "./search.box/search.box";
+import { SearchResult } from "./search.result/search.result";
 
 (() => {
   const buttonToggle = document.querySelectorAll(".menu-toggle");
@@ -28,3 +30,5 @@ import { MetaStaff } from "./metabox/staff";
 
 // @ts-ignore
 globalThis.MetaStaff = MetaStaff;
+globalThis.SearchBox = SearchBox;
+globalThis.SearchResult = SearchResult;
